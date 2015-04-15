@@ -4,7 +4,7 @@ Iteration #1:
 
 For this first iteration lets just focus on these three entities:
 
-Organization
+<h1>Organization</h1>
 Create, Read and Update
 Account
 Create, Read and Update
