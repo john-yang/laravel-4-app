@@ -1,0 +1,141 @@
+
+header,body { font-family:'Open Sans';padding:0;margin:0;}
+nav { width:100%;background:#000;}
+nav ul { list-style:none;padding:0;margin:0;}
+nav ul li { float:left;}
+nav ul li a { text-decoration:none;color:white;margin-left:20px;}
+nav ul li a:hover {background:#89000d;color:#fff;}
+nav ul li#logo a img{ width:100px;}
+
+.form { width:800px;margin:0 auto;}
+
+div.container { margin:20px;}
+
+.table { width:1800px;}
+.row {clear:both;overflow:hidden; }
+.clear{ clear:both;}
+
+.title div { }
+
+/*  Instances */
+div.edit { width:150px;}
+div.id { width:100px;}
+div.name { width:120px;}
+div.kernel { width:150px;}
+div.instance_profile  { width:150px;}
+div.root_device_type{ width:230px;}
+div.private_dns_name{width:200px;}
+div._state{ width:200px;}
+div.group_name{width:200px;}
+div.public_dns_name{width:200px;}
+div.state_reason{width:200px;}
+div.monitored{width:200px;}
+div.item{width:200px;}
+div.subnet_id{width:200px;}
+div.block_device_mapping{width:200px;}
+div.platform{width:200px;}
+div.events_set{width:200px;}
+div.ebs_optimized{width:200px;}
+div.client_token{width:200px;}
+div._in_monitoring_element{width:200px;}
+div.virtualization_type{width:200px;}
+div.architecture{width:200px;}
+div.ramdisk{width:200px;}
+div.key_name{}
+div.interfaces{}
+div.source_dest_check{}
+div.image_id{}
+div.reason{}
+div.groups{}
+div.spot_instance_request_id{}
+div.monitoring{}
+div.requester_id{}
+div.ip_address{}
+div.monitoring_state{}
+div._placement{}
+div.ami_launch_index{}
+div.dns_name{}
+div.region{}
+div.launch_time{}
+div.persistent{}
+div.instance_type{}
+div.connection{}
+div.root_device_name{}
+div.hypervisor{}
+div.private_ip_address{}
+div.vpc_id{}
+div.product_codes{}
+div.reliam_aws_account{}
+div.reliam_created{}
+div.reliam_modified{}
+div.reliam_status{}
+div.sys_distribution{}
+div.sys_distribution_release{}
+div.sys_distribution_version{}
+div.sys_kernel{}
+div.sys_machine{}
+div.updated_at{}
+div.created_at {}
+
+div.edit,
+div.id,
+div.name,
+div.kernel, 
+div.instance_profile,
+div.root_device_type,
+div.private_dns_name,
+div._state,
+div.group_name,
+div.public_dns_name,
+div.state_reason,
+div.monitored,
+div.item,
+div.subnet_id,
+div.block_device_mapping,
+div.platform,
+div.events_set,
+div.ebs_optimized,
+div.client_token,
+div._in_monitoring_element,
+div.virtualization_type,
+div.architecture,
+div.ramdisk,
+div.key_name,
+div.interfaces,
+div.source_dest_check,
+div.image_id,
+div.reason,
+div.groups,
+div.spot_instance_request_id,
+div.monitoring,
+div.requester_id,
+div.ip_address,
+div.monitoring_state,
+div._placement,
+div.ami_launch_index,
+div.dns_name,
+div.region,
+div.launch_time,
+div.persistent,
+div.instance_type,
+div.connection,
+div.root_device_name,
+div.hypervisor,
+div.private_ip_address,
+div.vpc_id,
+div.product_codes,
+div.reliam_aws_account,
+div.reliam_created,
+div.reliam_modified,
+div.reliam_status,
+div.sys_distribution,
+div.sys_distribution_release,
+div.sys_distribution_version,
+div.sys_kernel,
+div.sys_machine,
+div.updated_at,
+div.created_at {display:inline-block;float:left;}
+
+
+
+

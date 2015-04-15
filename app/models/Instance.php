@@ -1,0 +1,71 @@
+<?php
+
+
+class Instance extends Eloquent {
+
+	// protected $table = Instances;
+
+	public $timestamps = true;
+
+	protected $fillable = array('id',
+								'name',
+								'kernel',
+								'instance_profile',
+								'root_device_type',
+								'private_dns_name',
+								'_state',
+								'group_name',
+								'public_dns_name',
+								'state_reason',
+								'monitored',
+								'item', 
+								'subnet_id',
+								'block_device_mapping',
+								'platform',
+								'events_set',
+								'ebs_optimized',
+								'client_token',
+								'_in_monitoring_element',
+								'virtualization_type',
+								'architecture',
+								'ramdisk',
+								'_previous_state',
+								'tags',
+								'key_name',
+								'interfaces',
+								'source_dest_check',
+								'image_id',
+								'reason',
+								'groups',
+								'spot_instance_request_id',
+								'monitoring',
+								'requester_id',
+								'ip_address',
+								'monitoring_state',
+								'_placement',
+								'ami_launch_index',
+								'dns_name',
+								'region',
+								'launch_time',
+								'persistent',
+								'instance_type',
+								'connection',
+								'root_device_name',
+								'hypervisor',
+								'private_ip_address',
+								'vpc_id',
+								'product_codes',
+								'reliam_aws_account',
+								'reliam_created',
+								'reliam_modified',
+								'reliam_status',
+								'sys_distribution',
+								'sys_distribution_release',
+								'sys_distribution_version',
+								'sys_kernel',
+								'sys_machine',
+								'updated_at',
+								'created_at'
+								);
+
+}
