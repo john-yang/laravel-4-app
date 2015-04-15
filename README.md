@@ -53,16 +53,18 @@ containing the following fields : </p>
 and take care of syncing data</p>
 
 
-<h2>Installing Laravel</h2>
+<h2>Installing Laravel VM with Homestead &amp; Vagrant</h2>
 
-<div><a href="https://laracasts.com/lessons/laravel-installation-for-newbs">Installing Laravel Tutorial (Laracast)</a></div>
+<div><a href="http://laravel.com/docs/4.2/homestead">Installing Laravel on Homestead Tutorial</a></div>
 
 <strong>Summary:</strong>
 <ul>
 <li>Install Composer</li>
 <li>Install Laravel CLI Tool</li>
-<li>php artisan migrate</li>
-<li>php artisan db:seed</li>
+<li>Run: homestead up</li>
+<li>Run: homestead ssh</li>
+<li>Run: php artisan migrate</li>
+<li>Run: php artisan db:seed</li>
 </ul>
 
 
