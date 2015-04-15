@@ -1,10 +1,13 @@
 
+Reliam App
+
 Iteration #1:
------------------------------------------
+---------------
 
-For this first iteration lets just focus on these three entities:
+For this first iteration lets just focus 
+on these three entities:
 
-<h1>Organization</h1>
+Organization
 Create, Read and Update
 Account
 Create, Read and Update
@@ -13,9 +16,24 @@ List in table, and Read individually.
 
 Here are the most critical use cases:
 
-As a sys admin I should be able to create an organization and provide the AWS API keys for an account. Upon creation, the system would call a python script to collect data. (This may be a long operation, so we would need some dummy progress bar animation)
-As a support associate I should be able select an organization, and view all instances for all accounts of the selected organization. 
-The instances page would have a table containing the following fields. 
+Use Case #1:
+-------------------
+As a sys admin I should be able to create an organization 
+and provide the AWS API keys for an account. Upon creation, 
+the system would call a python script to collect data. 
+
+*This may be a long operation, so we would
+ need some dummy progress bar animation
+
+Use Case #2:
+--------------------
+As a support associate I should be able select an organization, 
+and view all instances for all accounts of the selected organization. 
+
+
+The instances page would have a table 
+containing the following fields : 
+
 [column_name] => [UI label]
 id   =>  label: Instance Id
 tags  =>  Tags       // Heads up. This will be JSON string
@@ -27,5 +45,12 @@ private_ip_address  => Private IP
 instance_type  =>  Instance Type
 region  =>  Region
 account_name ??? (this is low priority)
-As a support associate I should able click a “Refresh Button” in Account pages. (Under the hood a python script will be called and take care of syncing data)
+
+
+Use Case #3:
+---------------------
+As a support associate I should able click a 
+“Refresh Button” in Account pages. (Under the 
+hood a python script will be called 
+and take care of syncing data)
 
