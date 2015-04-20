@@ -2,19 +2,23 @@
 <h2>Reliam App</h2>
 
 <h3>Table of Contents</h3>
-<ul>
-<li><a href="user-content-usecases">User Cases</a></li>
-<li><a href="user-content-todo">To Do</a></li>
-<li><a href="user-content-updates">Updates</a></li>
-</ul>
-
-
+	<ul>
+		<li><a href="#user-content-usecases">User Cases</a></li>
+		<li><a href="#user-content-todo">To Do</a></li>
+		<li><a href="#user-content-updates">Updates</a></li>
+	</ul>
 
 <strong id="user-content-todo">To Do:</strong>
 ----------------------------
 - add /logout button in nav bar, but for now, you can use /logout
-- finish use case <a href="#user-content-usecase1">#1</a>, #2, #3
+- finish :
+<ul>
+	<li><a href="#user-content-usecase1">Use Case #1</a></li>
+ 	<li><a href="#user-content-usecase2">Use Case #2</a></li>
+ 	<li> <a href="#user-content-usecase3">Use Case #3</a></li>
+</ul>
 
+<h3 id="user-content-updates">Updates</h3>
 
 Updates (4.20.15)
 ----------------------------
@@ -22,7 +26,7 @@ Updates (4.20.15)
 -added admin area for sys admins
 -added user authorization, so if a user tries to enter into /admin area, they are redirected to /login
 
-created user test accounts:
+<i>created user test accounts:</i>
 
 $usernames->array(zeus,hera,pandora,prometheus);
 $password == 'password';
@@ -65,7 +69,7 @@ the system would call a python script to collect data. </p>
 <blockquote>This may be a long operation, so we would
  need some dummy progress bar animation</blockquote>
 
-<strong>Use Case #2:</strong>
+<strong id="user-content-usecase2">Use Case #2:</strong>
 <p>As a support associate I should be able to select an organization, 
 and view all instances for all accounts of the selected organization. </p>
 
@@ -88,7 +92,7 @@ containing the following fields : </p>
 	</ul>
 </blockquote>
 
-<strong>Use Case #3:</strong>
+<strong id="user-content-usecase3">Use Case #3:</strong>
 <p>As a support associate I should able click a 
 “Refresh Button” in Account pages. 
 <p>Under the hood a python script will be called 
