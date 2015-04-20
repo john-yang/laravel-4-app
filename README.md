@@ -1,80 +1,81 @@
 	
 <h2>Reliam App</h2>
 
-<h3>Table of Contents</h3>
-	<ul>
+<ul>
+		<h3>Table of Contents</h3>
 		<li><a href="#user-content-usecases">User Cases</a></li>
 		<li><a href="#user-content-todo">To Do</a></li>
 		<li><a href="#user-content-updates">Updates</a></li>
-	</ul>
-
-<strong id="user-content-todo">To Do:</strong>
-----------------------------
-- add /logout button in nav bar, but for now, you can use /logout
-- finish :
-<ul>
-	<li><a href="#user-content-usecase1">Use Case #1</a></li>
- 	<li><a href="#user-content-usecase2">Use Case #2</a></li>
- 	<li> <a href="#user-content-usecase3">Use Case #3</a></li>
 </ul>
 
-<h3 id="user-content-updates">Updates</h3>
 
-Updates (4.20.15)
-----------------------------
+<ul>
 
--added admin area for sys admins
--added user authorization, so if a user tries to enter into /admin area, they are redirected to /login
+	<h4 id="user-content-todo">To Do:</h4>
+	<li>add /logout button in nav bar, but for now, you can use /logout</li>
+	<strong>finish :</strong>
+	<li><a href="#user-content-usecase1">Use Case #1</a></li>
+ 	<li><a href="#user-content-usecase2">Use Case #2</a></li>
+ 	<li><a href="#user-content-usecase3">Use Case #3</a></li>
+ 	<li>
+ 		<p>There needs to be a page that displays all accounts belonging to a specific organization. 
+ 		Grab the ID of the organization and match that up with a search through the accounts table 
+ 		for matching organization integers in that table.
+		</p>
+	</li>
+	<li>:: get all accounts where $organization == FUHU ::</li>
+	<li>:: get all instances where $organization == FUHU ::</li>
 
-<i>created user test accounts:</i>
+<ul>
+	<h4 id="user-content-updates">Updates</h4>
+	<h5>Updates (4.20.15)</h5>
+	<li>added admin area for sys admins</li>
+	<li>-added user authorization, so if a user tries to enter into /admin area, 
+	they are redirected to /login</li>
+</ul>
 
-$usernames->array(zeus,hera,pandora,prometheus);
-$password == 'password';
+<ul>
+	<i>created user test accounts:</i>
+	<li>$usernames->array(zeus,hera,pandora,prometheus);</li>
+	<li>$password == 'password';</li>
+</ul>
 
-Updates (4.15.15)
-----------------------------
--added /organizations for displaying all organizations
--added /accounts for listing all accounts
--added /instances for listing all instances 
--migrated test data into app using 'php artisan db:seed' terminal command
--created test data db:seeds for following laravel's 
+<ul>
+	<h5>Updates (4.15.15)</h5>
+	<li>added /organizations for displaying all organizations</li>
+	<li>added /accounts for listing all accounts</li>
+	<li>added /instances for listing all instances </li>
+	<li>migrated test data into app using 'php artisan db:seed' terminal command</li>
+	<li>created test data db:seeds for following laravel's </li>
+</ul>
 
 ####
 
-There needs to be a page that displays all accounts belonging to a specific organization.
-Grab the ID of the organization and match that up with a search through the accounts table for matching organization integers in that table.
-
-:: get all accounts where $organization == FUHU ::
-:: get all instances where $organization == FUHU ::
-
 <h3>Requirements:</h3>
 
-<i>For this first iteration lets just focus 
-on these three entities:</i>
-
 <ul>
-<li>Organization: Create, Read and Update</li>
-<li>Account: Create, Read and Update</li>
-<li>Instance: List in table, and Read individually.</li>
+	<h5><i>For this first iteration lets just focus 
+on these three entities:</i></h5>
+	<li>Organization: Create, Read and Update</li>
+	<li>Account: Create, Read and Update</li>
+	<li>Instance: List in table, and Read individually.</li>
 </ul>
 
 <h3>Use Cases:</h3>
 
 <strong id="user-content-usecase1">Use Case #1:</strong>
-
 <p>As a sys admin I should be able to create an organization 
 and provide the AWS API keys for an account. Upon creation, 
 the system would call a python script to collect data. </p>
 
-<blockquote>This may be a long operation, so we would
- need some dummy progress bar animation</blockquote>
+<blockquote>This may be a long operation, so we would need 
+some dummy progress bar animation</blockquote>
 
 <strong id="user-content-usecase2">Use Case #2:</strong>
 <p>As a support associate I should be able to select an organization, 
 and view all instances for all accounts of the selected organization. </p>
 
-<p>The instances page would have a table 
-containing the following fields : </p>
+<p>The instances page would have a table containing the following fields : </p>
 
 <blockquote>
 	<ul>
@@ -94,14 +95,15 @@ containing the following fields : </p>
 
 <strong id="user-content-usecase3">Use Case #3:</strong>
 <p>As a support associate I should able click a 
-“Refresh Button” in Account pages. 
+“Refresh Button” in Account pages. </p>
 <p>Under the hood a python script will be called 
 and take care of syncing data</p>
 
-
 <h2>Installing Laravel VM with Homestead &amp; Vagrant</h2>
 
-<div><a href="http://laravel.com/docs/4.2/homestead">Installing Laravel on Homestead Tutorial</a></div>
+<div>
+	<a href="http://laravel.com/docs/4.2/homestead">Installing Laravel on Homestead Tutorial</a>
+</div>
 
 <strong>Summary:</strong>
 <ul>
