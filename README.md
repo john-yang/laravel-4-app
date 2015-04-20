@@ -48,7 +48,7 @@ on these three entities:</i>
 
 <h3>Use Cases:</h3>
 
-<a href="usecase1"><strong>Use Case #1:</strong></a>
+<strong id="usecase1">Use Case #1:</strong>
 
 <p>As a sys admin I should be able to create an organization 
 and provide the AWS API keys for an account. Upon creation, 
@@ -64,19 +64,21 @@ and view all instances for all accounts of the selected organization. </p>
 <p>The instances page would have a table 
 containing the following fields : </p>
 
-<ul>
-	<li>[column_name] => [UI label]</li>
-	<li>id   =>  label: Instance Id</li>
-	<li>tags  =>  Tags       // Heads up. This will be JSON string</li>
-	<li>_state  =>  State</li>
-	<li>public_dns_name => Public DNS Name</li>
-	<li>ip_address  =>  Public IP</li>             
-	<li>private_dns_name  => Private DNS Name</li>
-	<li>private_ip_address  => Private IP</li>
-	<li>instance_type  =>  Instance Type</li>
-	<li>region  =>  Region</li>
-	<li>account_name ??? (this is low priority)</li>
-</ul>
+<blockquote>
+	<ul>
+		<li>[column_name] => [UI label]</li>
+		<li>id   =>  label: Instance Id</li>
+		<li>tags  =>  Tags       // Heads up. This will be JSON string</li>
+		<li>_state  =>  State</li>
+		<li>public_dns_name => Public DNS Name</li>
+		<li>ip_address  =>  Public IP</li>             
+		<li>private_dns_name  => Private DNS Name</li>
+		<li>private_ip_address  => Private IP</li>
+		<li>instance_type  =>  Instance Type</li>
+		<li>region  =>  Region</li>
+		<li>account_name ??? (this is low priority)</li>
+	</ul>
+</blockquote>
 
 <strong>Use Case #3:</strong>
 <p>As a support associate I should able click a 
