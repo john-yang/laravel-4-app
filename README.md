@@ -9,7 +9,6 @@
 		<li><a href="#user-content-requirements">Requirements</a></li>
 </ul>
 
-
 <ul id="user-content-todo">
 
 	<h4>To Do:</h4>
@@ -94,20 +93,16 @@ and view all instances for all accounts of the selected organization. </p>
 <p>Under the hood a python script will be called 
 and take care of syncing data</p>
 
-<h2>Installing Laravel VM with Homestead &amp; Vagrant</h2>
-
-<div>
-	<a href="http://laravel.com/docs/4.2/homestead">Installing Laravel on Homestead Tutorial</a>
-</div>
-
 <strong>Summary:</strong>
-<ul>
-<li>Install Composer</li>
-<li>Install Laravel CLI Tool</li>
-<li>Run: homestead up</li>
-<li>Run: homestead ssh</li>
-<li>Run: php artisan migrate</li>
-<li>Run: php artisan db:seed</li>
+<ul id="user-content-installing">
+	<h2>Installing Laravel VM with Homestead &amp; Vagrant</h2>
+	<h6><a href="http://laravel.com/docs/4.2/homestead">Installing Laravel on Homestead Tutorial</a></h6>
+	<li>Install Composer</li>
+	<li>Install Laravel CLI Tool</li>
+	<li>Run: homestead up</li>
+	<li>Run: homestead ssh</li>
+	<li>Run: php artisan migrate</li>
+	<li>Run: php artisan db:seed</li>
 </ul>
 
 
