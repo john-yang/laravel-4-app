@@ -10,10 +10,10 @@
 </ul>
 
 
-<ul>
+<ul id="user-content-todo">
 
-	<h4 id="user-content-todo">To Do:</h4>
-	<li>add /logout button in nav bar, but for now, you can use /logout</li>
+	<h4>To Do:</h4>
+	<li>add '/logout' button in nav bar, but for now, you can use /logout</li>
 	<li><a href="#user-content-usecase1">Finish->Use Case #1</a></li>
  	<li><a href="#user-content-usecase2">Finish->Use Case #2</a></li>
  	<li><a href="#user-content-usecase3">Finish->Use Case #3</a></li>
@@ -23,38 +23,35 @@
  		Grab the ID of the organization and match that up with a search through the accounts table 
  		for matching organization integers in that table.
 		</p>
+		<p>:: get all accounts where $organization == FUHU ::</p>
+		<p>:: get all instances where $organization == FUHU ::</p>
 	</li>
-	<li>:: get all accounts where $organization == FUHU ::</li>
-	<li>:: get all instances where $organization == FUHU ::</li>
 
-<ul>
-	<h4 id="user-content-updates">Updates</h4>
-	<h5>Updates (4.20.15)</h5>
-	<li>added admin area for sys admins</li>
-	<li>-added user authorization, so if a user tries to enter into /admin area, 
-	they are redirected to /login</li>
 </ul>
 
-<ul>
-	<i>created user test accounts:</i>
-	<li>$usernames->array(zeus,hera,pandora,prometheus);</li>
-	<li>$password == 'password';</li>
-</ul>
+<ul id="user-content-updates">
+		<h4>Updates</h4>
+		<h5>Updates (4.20.15)</h5>
+			<li>added admin area for sys admins</li>
+			<li>-added user authorization, so if a user tries to enter into /admin area, 
+		they are redirected to /login</li>
 
-<ul>
-	<h5>Updates (4.15.15)</h5>
-	<li>added /organizations for displaying all organizations</li>
-	<li>added /accounts for listing all accounts</li>
-	<li>added /instances for listing all instances </li>
-	<li>migrated test data into app using 'php artisan db:seed' terminal command</li>
-	<li>created test data db:seeds for following laravel's </li>
-</ul>
+		<h6>created user test accounts:</h6>
+			<li>$usernames->array(zeus,hera,pandora,prometheus);</li>
+			<li>$password == 'password';</li>
+
+		<h5>Updates (4.15.15)</h5>
+			<li>added /organizations for displaying all organizations</li>
+			<li>added /accounts for listing all accounts</li>
+			<li>added /instances for listing all instances </li>
+			<li>migrated test data into app using 'php artisan db:seed' terminal command</li>
+			<li>created test data db:seeds for following laravel's </li>
+	</ul>
 
 <h3>Requirements:</h3>
 
 <ul>
-	<h5><i>For this first iteration lets just focus 
-on these three entities:</i></h5>
+	<h5><i>For this first iteration lets just focus on these three entities:</i></h5>
 	<li>Organization: Create, Read and Update</li>
 	<li>Account: Create, Read and Update</li>
 	<li>Instance: List in table, and Read individually.</li>
