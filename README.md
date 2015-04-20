@@ -2,26 +2,38 @@
 <h2>Reliam App</h2>
 
 
-####
+To Do:
+----------------------------
+- add /logout button in nav bar, but for now, you can use /logout
+- finish use case <a href="#usecase1">#1</a>, #2, #3
 
+
+Updates (4.20.15)
+----------------------------
+
+-added admin area for sys admins
+-added user authorization, so if a user tries to enter into /admin area, they are redirected to /login
+
+created user test accounts:
+
+$usernames->array(zeus,hera,pandora,prometheus);
+$password == 'password';
+
+Updates (4.15.15)
+----------------------------
+-added /organizations for displaying all organizations
+-added /accounts for listing all accounts
+-added /instances for listing all instances 
+-migrated test data into app using 'php artisan db:seed' terminal command
+-created test data db:seeds for following laravel's 
+
+####
 
 There needs to be a page that displays all accounts belonging to a specific organization.
 Grab the ID of the organization and match that up with a search through the accounts table for matching organization integers in that table.
 
 :: get all accounts where $organization == FUHU ::
-
-
-
 :: get all instances where $organization == FUHU ::
-
-display those matching 
-
-Questions:
-
-Use Case #1: Should I start implementing user auth into the app.  This way I could present different views for different users, i.e. allow the sys admin to add in an organization w/ AWS keys and hide that from support associates. 
-
-Use Case #3: 
-
 
 <h3>Requirements:</h3>
 
@@ -34,9 +46,9 @@ on these three entities:</i>
 <li>Instance: List in table, and Read individually.</li>
 </ul>
 
-<i>Here are the most critical use cases:</i>
+<h3>Use Cases:</h3>
 
-<strong>Use Case #1:</strong>
+<a href="usecase1"><strong>Use Case #1:</strong></a>
 
 <p>As a sys admin I should be able to create an organization 
 and provide the AWS API keys for an account. Upon creation, 
@@ -65,7 +77,6 @@ containing the following fields : </p>
 	<li>region  =>  Region</li>
 	<li>account_name ??? (this is low priority)</li>
 </ul>
-
 
 <strong>Use Case #3:</strong>
 <p>As a support associate I should able click a 
