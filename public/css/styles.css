@@ -18,6 +18,9 @@ div.container { margin:20px;}
 .title div { }
 
 /*  Instances */
+
+div.instances { width:200px;}
+div.accounts {width:200px;}
 div.edit { width:150px;}
 div.id { width:100px;}
 div.name { width:120px;}
@@ -77,6 +80,8 @@ div.sys_machine{}
 div.updated_at{}
 div.created_at {}
 
+div.instances,
+div.accounts,
 div.edit,
 div.id,
 div.name,

@@ -16,11 +16,9 @@ class PageController extends BaseController {
 		return View::make('search')->with('arr', $arr);
 	}	
 
-	public function instances()
+	public function getInstancesByAccountID($id)
 	{
-		$json_instances = Instance::all();
-		$arr = json_decode($json_instances,true);
-		return View::make('instances')->with('arr', $arr);
+		echo $id;
 	}
 
 

@@ -25,7 +25,7 @@
 
 		<?php
 			
-	 	  	foreach($arr as $row) 
+	 	  	foreach($instances as $row) 
 	 	  	{
 	 	  		echo '<div class="row one">';
 	  			echo '<div class="id">'.$row['id'].'</div>';

@@ -13,13 +13,48 @@ class DatabaseSeeder extends Seeder {
 
     public function run()
     {
-        $this->call('InstanceTableSeeder');
-        $this->call('AccountTableSeeder');
-        $this->call('OrganizationTableSeeder');
+        $this->call('UserTableSeeder');
+        //$this->call('InstanceTableSeeder');
+        //$this->call('AccountTableSeeder');
+        //$this->call('OrganizationTableSeeder');
         $this->command->info('All Tables Seeded!');
     }
 
 }
+
+class UserTableSeeder extends Seeder { 
+
+    public function run()
+    {
+
+        User::create(array(
+                'username' => 'zeus',
+                'password' => Hash::make('password'),
+                'email' => 'zeus@olympus.com'
+        ));
+
+        User::create(array(
+                'username' => 'hera',
+                'password' => Hash::make('password'),
+                'email' => 'hera@olympus.com'
+        ));
+
+        User::create(array(
+                'username' => 'pandora',
+                'password' => Hash::make('password'),
+                'email' => 'pandora@olympus.com'
+        ));
+
+        User::create(array(
+                'username' => 'prometheus',
+                'password' => Hash::make('password'),
+                'email' => 'prometheus@olympus.com'
+        ));
+
+    }
+
+}
+
 
 class OrganizationTableSeeder extends Seeder {
  

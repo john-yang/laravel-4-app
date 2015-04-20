@@ -1,16 +1,37 @@
 
 <h2>Reliam App</h2>
 
+
+####
+
+
+There needs to be a page that displays all accounts belonging to a specific organization.
+Grab the ID of the organization and match that up with a search through the accounts table for matching organization integers in that table.
+
+:: get all accounts where $organization == FUHU ::
+
+
+
+:: get all instances where $organization == FUHU ::
+
+display those matching 
+
+Questions:
+
+Use Case #1: Should I start implementing user auth into the app.  This way I could present different views for different users, i.e. allow the sys admin to add in an organization w/ AWS keys and hide that from support associates. 
+
+Use Case #3: 
+
+
 <h3>Requirements:</h3>
 
 <i>For this first iteration lets just focus 
 on these three entities:</i>
 
 <ul>
-<li>Organization</li>
-<li>Create, Read and Update Account</li>
-<li>Create, Read and Update Instance</li>
-<li>List in table, and Read individually.</li>
+<li>Organization: Create, Read and Update</li>
+<li>Account: Create, Read and Update</li>
+<li>Instance: List in table, and Read individually.</li>
 </ul>
 
 <i>Here are the most critical use cases:</i>
@@ -25,7 +46,7 @@ the system would call a python script to collect data. </p>
  need some dummy progress bar animation</blockquote>
 
 <strong>Use Case #2:</strong>
-<p>As a support associate I should be able select an organization, 
+<p>As a support associate I should be able to select an organization, 
 and view all instances for all accounts of the selected organization. </p>
 
 <p>The instances page would have a table 
