@@ -6,6 +6,7 @@
 		<li><a href="#user-content-usecases">User Cases</a></li>
 		<li><a href="#user-content-todo">To Do</a></li>
 		<li><a href="#user-content-updates">Updates</a></li>
+		<li><a href="#user-content-requirements">Requirements</a></li>
 </ul>
 
 
@@ -13,10 +14,10 @@
 
 	<h4 id="user-content-todo">To Do:</h4>
 	<li>add /logout button in nav bar, but for now, you can use /logout</li>
-	<strong>finish :</strong>
-	<li><a href="#user-content-usecase1">Use Case #1</a></li>
- 	<li><a href="#user-content-usecase2">Use Case #2</a></li>
- 	<li><a href="#user-content-usecase3">Use Case #3</a></li>
+	<li><a href="#user-content-usecase1">Finish->Use Case #1</a></li>
+ 	<li><a href="#user-content-usecase2">Finish->Use Case #2</a></li>
+ 	<li><a href="#user-content-usecase3">Finish->Use Case #3</a></li>
+ 	<li>put up working demo on live server</li>
  	<li>
  		<p>There needs to be a page that displays all accounts belonging to a specific organization. 
  		Grab the ID of the organization and match that up with a search through the accounts table 
@@ -49,8 +50,6 @@
 	<li>created test data db:seeds for following laravel's </li>
 </ul>
 
-####
-
 <h3>Requirements:</h3>
 
 <ul>
@@ -61,7 +60,7 @@ on these three entities:</i></h5>
 	<li>Instance: List in table, and Read individually.</li>
 </ul>
 
-<h3>Use Cases:</h3>
+<h3 id="user-content-usecases">Use Cases:</h3>
 
 <strong id="user-content-usecase1">Use Case #1:</strong>
 <p>As a sys admin I should be able to create an organization 
