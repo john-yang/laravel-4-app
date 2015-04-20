@@ -1,11 +1,19 @@
-
+	
 <h2>Reliam App</h2>
 
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="user-content-usecases">User Cases</a></li>
+<li><a href="user-content-todo">To Do</a></li>
+<li><a href="user-content-updates">Updates</a></li>
+</ul>
 
-To Do:
+
+
+<strong id="user-content-todo">To Do:</strong>
 ----------------------------
 - add /logout button in nav bar, but for now, you can use /logout
-- finish use case <a href="#usecase1">#1</a>, #2, #3
+- finish use case <a href="#user-content-usecase1">#1</a>, #2, #3
 
 
 Updates (4.20.15)
@@ -48,7 +56,7 @@ on these three entities:</i>
 
 <h3>Use Cases:</h3>
 
-<strong id="usecase1">Use Case #1:</strong>
+<strong id="user-content-usecase1">Use Case #1:</strong>
 
 <p>As a sys admin I should be able to create an organization 
 and provide the AWS API keys for an account. Upon creation, 
