@@ -15,6 +15,9 @@
   			<div class="name">Name</div>
   			<div class="organization_id">Organization ID</div>
   			<div class="account_id">Account ID</div>
+  			<div class="region">Region</div>
+  			<div class="ip_address">IP Address</div>
+  			<div class="private_dns_name">Private DNS Name</div>
   			<div class="kernel">Kernel</div>
   			<div class="instance_profile">Instance Profile</div>
   			<div class="root_device_type">Root Device Type</div>
@@ -32,8 +35,12 @@
 	 	  		echo '<div class="row one">';
 	  			echo '<div class="id">'.$row['id'].'</div>';
 	  			echo '<div class="name">'.$row['name'].'</div>';
+	  			
 	  			echo '<div class="organization_id">'.$row['organization_id'].'</div>';
 	  			echo '<div class="account_id">'.$row['account_id'].'</div>';
+	  			echo '<div class="region">'.$row['region'].'</div>';
+	  			echo '<div class="ip_address">'.$row['ip_address'].'</div>';
+	  			echo '<div class="private_dns_name">'.$row['private_dns_name'].'</div>';
 	  			echo '<div class="kernel">'.$row['kernel'].'</div>';
 	  			echo '<div class="instance_profile">'.$row['instance_profile'].'</div>';
 	  			echo '<div class="root_device_type">'.$row['root_device_type'].'</div>';

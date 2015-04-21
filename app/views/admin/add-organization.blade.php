@@ -1,15 +1,11 @@
-
-
 @extends('layouts.master')
 
-@section('sidebar')
-    
 @section('content')
+
 	<div class="table">
 
-<div id="edit-organization" class="form">
-
-{{ Form::model($organization, ['method' => 'PATCH', 'route' => ['organizations.update', $organization->id]])	 }}
+<div id="add-organization" class="form">
+{{ Form::open(['route' => 'organizations.store']) }}
 
 <div>
 {{ Form::label('id', 'ID:') }}
@@ -22,12 +18,19 @@
 </div>
 
 <div>
-{{ Form::submit('Update Organization') }}
+{{ Form::label('description','Description:') }}
+{{ Form::text('description') }}
+</div>
+
+<div>
+{{ Form::submit('Add New Organization') }}
 </div>
 
 {{ Form::close() }}
 
+
 </div><!-- form -->
+
   	</div><!-- table -->
 
 @stop

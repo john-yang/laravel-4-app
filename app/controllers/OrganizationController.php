@@ -83,7 +83,6 @@ class OrganizationController extends \BaseController {
 		return Redirect::route('organizations.index');
 	}
 
-
 	/**
 	 * Remove the specified resource from storage.
 	 *
@@ -95,5 +94,16 @@ class OrganizationController extends \BaseController {
 		//
 	}
 
+	public function accounts($id)
+	{
+		$accounts = Account::where('organization_id','=',$id)->get();
+		return View::make('organizations.accounts')->with('accounts',$accounts);
+	}
+
+	public function instances($id)
+	{
+		$instances = Instance::where('organization_id','=',$id)->get();
+		return View::make('organizations.instances')->with('instances',$instances);
+	}
 
 }

@@ -14,9 +14,9 @@ class DatabaseSeeder extends Seeder {
     public function run()
     {
         $this->call('UserTableSeeder');
-        //$this->call('InstanceTableSeeder');
-        //$this->call('AccountTableSeeder');
-        //$this->call('OrganizationTableSeeder');
+        $this->call('InstanceTableSeeder');
+        $this->call('AccountTableSeeder');
+        $this->call('OrganizationTableSeeder');
         $this->command->info('All Tables Seeded!');
     }
 
@@ -63,10 +63,9 @@ class OrganizationTableSeeder extends Seeder {
        
         Organization::create(    
             array(
-                'id' => 1,
-                'name' => 'Org.A',
+                'id' => '1',
+                'name' => 'Organization#1',
                 'description' => 'Your Description Will Go Here',
-                'organization' => 1,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
@@ -74,10 +73,9 @@ class OrganizationTableSeeder extends Seeder {
 
         Organization::create(    
             array(
-                'id' => 2,
-                'name' => 'Org.B',
+                'id' => '2',
+                'name' => 'Organization#2',
                 'description' => 'Your Description Will Go Here',
-                'organization' => 2,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
@@ -85,10 +83,9 @@ class OrganizationTableSeeder extends Seeder {
 
         Organization::create(    
             array(
-                'id' => 3,
-                'name' => 'Org.C',
+                'id' => '3',
+                'name' => 'Organization#3',
                 'description' => 'Your Description Will Go Here',
-                'organization' => 3,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
@@ -105,33 +102,33 @@ class AccountTableSeeder extends Seeder {
 
         Account::create(
             array(
-                'id' => 1,
-                'name' => 'Acct.1.Org.A',
+                'id' => '1',
+                'organization_id' => '1',
+                'name' => 'A1O1',
                 'access_key' => 'access_key_placeholder',
                 'secret_key' => 'secret_key_placeholder',
-                'organization' => 1,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
         );
         Account::create(
             array(
-                'id' => 2,
-                'name' => 'Acct.2.Org.A',
+                'id' => '2',
+                'name' => 'A2O1',
+                'organization_id' => '1',
                 'access_key' => 'access_key_placeholder',
                 'secret_key' => 'secret_key_placeholder',
-                'organization' => 1,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
         );
         Account::create(    
             array(
-                'id' => 3,
-                'name' => 'Acct.3.Org.A',
+                'id' => '3',
+                'name' => 'A3O1',
+                'organization_id' => '1',
                 'access_key' => 'access_key_placeholder',
                 'secret_key' => 'secret_key_placeholder',
-                'organization' => 1,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
@@ -139,33 +136,33 @@ class AccountTableSeeder extends Seeder {
 
         Account::create(
             array(
-                'id' => 4,
-                'name' => 'Acct.4.Org.B',
+                'id' => '4',
+                'name' => 'A4O2',
+                'organization_id' => '2',
                 'access_key' => 'access_key_placeholder',
                 'secret_key' => 'secret_key_placeholder',
-                'organization' => 2,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
         );
         Account::create(
             array(
-                'id' => 5,
-                'name' => 'Acct.5.Org.B',
+                'id' => '5',
+                'name' => 'A5O2',
+                'organization_id' => '2',
                 'access_key' => 'access_key_placeholder',
                 'secret_key' => 'secret_key_placeholder',
-                'organization' => 2,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
         );
         Account::create(    
             array(
-                'id' => 6,
-                'name' => 'Acct.6.Org.B',
+                'id' => '6',
+                'name' => 'A6O2',
+                'organization_id' => '2',
                 'access_key' => 'access_key_placeholder',
                 'secret_key' => 'access_secret_key_placeholder',
-                'organization' => 2,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
@@ -173,33 +170,33 @@ class AccountTableSeeder extends Seeder {
 
                 Account::create(
             array(
-                'id' => 7,
-                'name' => 'Acct.7.Org.C',
+                'id' => '7',
+                'name' => 'A7O3',
+                'organization_id' => '3',
                 'access_key' => 'access_key_placeholder',
                 'secret_key' => 'secret_key_placeholder',
-                'organization' => 3,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
         );
         Account::create(
             array(
-                'id' => 8,
-                'name' => 'Acct.8.Org.C',
+                'id' => '8',
+                'name' => 'A8O3',
+                'organization_id' => '3',
                 'access_key' => 'access_key_placeholder',
                 'secret_key' => 'access_secret_key_placeholder',
-                'organization' => 3,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
         );
         Account::create(    
             array(
-                'id' => 9,
-                'name' => 'Acct.9.Org.C',
+                'id' => '9',
+                'name' => 'A9O3',
+                'organization_id' => '3',
                 'access_key' => 'access_key_placeholder',
                 'secret_key' => 'access_secret_key_placeholder',
-                'organization' => 3,
                 'updated_at' => new DateTime,
                 'created_at' => new DateTime
             )
@@ -217,8 +214,10 @@ class InstanceTableSeeder extends Seeder {
  
         Instance::create(
             array(
-                'id' => 1,
-                'name'=>'id-1',
+                'id' => '1',
+                'name'=>'instance-1',
+                'organization_id' => '1',
+                'account_id' => '1',
                 'kernel' => 'kernel-1',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -265,7 +264,6 @@ class InstanceTableSeeder extends Seeder {
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 1,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -283,8 +281,10 @@ class InstanceTableSeeder extends Seeder {
 
 Instance::create(
             array(
-                'id'=> 2,
-                'name'=>'id-2',
+                'id'=> '2',
+                'name'=>'instance-2',
+                'organization_id' => '1',
+                'account_id' => '1',
                 'kernel' => 'kernel-2',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -331,7 +331,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 1,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -349,8 +348,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id' => 3,
-                'name'=>'id-3',
+                'id' => '3',
+                'name'=>'instance-3',
+                'organization_id' => '1',
+                'account_id' => '1',
                 'kernel' => 'kernel-3',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -397,7 +398,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 1,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -415,8 +415,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id' => 4,
-                'name' => 'id-4',
+                'id' => '4',
+                'name' => 'instance-4',
+                'organization_id' => '1',
+                'account_id' => '2',
                 'kernel' => 'kernel-4',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -463,7 +465,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 2,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -481,8 +482,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id' => 5,
-                'name'=>'id-5',
+                'id' => '5',
+                'name'=>'instance-5',
+                'organization_id' => '1',
+                'account_id' => '2',
                 'kernel' => 'kernel-5',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -529,7 +532,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 2,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -547,8 +549,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id' => 6,
-                'name'=>'id-6',
+                'id' => '6',
+                'name'=>'instance-6',
+                'organization_id' => '1',
+                'account_id' => '2',
                 'kernel' => 'kernel-6',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -595,7 +599,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 2,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -613,8 +616,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=>7,
-                'name'=>'id-7',
+                'id'=> '7',
+                'name'=>'instance-7',
+                'organization_id' => '1',
+                'account_id' => '3',
                 'kernel' => 'kernel-7',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -661,7 +666,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 3,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -677,8 +681,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 8,
-                'name'=>'id-8',
+                'id'=> '8',
+                'name'=>'instance-8',
+                'organization_id' => '1',
+                'account_id' => '3',
                 'kernel' => 'kernel-8',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -725,7 +731,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 3,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -742,8 +747,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 9,
-                'name'=>'id-9',
+                'id'=> '9',
+                'name'=>'instance-9',
+                'organization_id' => '1',
+                'account_id' => '3',
                 'kernel' => 'kernel-9',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -790,7 +797,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 3,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -807,8 +813,10 @@ Instance::create(
 
         Instance::create(
             array(
-                'id'=> 10,
-                'name'=>'id-10',
+                'id'=> '10',
+                'name'=>'instance-10',
+                'organization_id' => '2',
+                'account_id' => '4',
                 'kernel' => 'kernel-10',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -855,7 +863,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 4,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -873,8 +880,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 11,
-                'name'=>'id-11',
+                'id'=> '11',
+                'name'=>'instance-11',
+                'organization_id' => '2',
+                'account_id' => '4',
                 'kernel' => 'kernel-11',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -921,7 +930,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 4,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -939,8 +947,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 12,
-                'name'=>'id-12',
+                'id'=> '12',
+                'name'=>'instance-12',
+                'organization_id' => '2',
+                'account_id' => '4',
                 'kernel' => 'kernel-12',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -987,7 +997,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 4,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1005,8 +1014,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 13,
-                'name'=>'id-13',
+                'id'=> '13',
+                'name'=>'instance-13',
+                'organization_id' => '2',
+                'account_id' => '5',
                 'kernel' => 'kernel-13',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1053,7 +1064,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 5,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1071,8 +1081,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 14,
-                'name'=>'id-14',
+                'id'=> '14',
+                'name'=>'instance-14',
+                'organization_id' => '2',
+                'account_id' => '5',
                 'kernel' => 'kernel-14',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1119,7 +1131,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 5,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1137,8 +1148,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 15,
-                'name'=>'id-15',
+                'id'=> '15',
+                'name'=>'instance-15',
+                'organization_id' => '2',
+                'account_id' => '5',
                 'kernel' => 'kernel-15',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1185,7 +1198,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 5,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1203,8 +1215,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 16,
-                'name'=>'id-16',
+                'id'=> '16',
+                'name'=>'instance-16',
+                'organization_id' => '2',
+                'account_id' => '6',
                 'kernel' => 'kernel-16',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1251,7 +1265,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 6,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1267,8 +1280,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 17,
-                'name'=>'id-17',
+                'id'=> '17',
+                'name'=>'instance-17',
+                'organization_id' => '2',
+                'account_id' => '6',
                 'kernel' => 'kernel-17',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1315,7 +1330,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 6,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1332,8 +1346,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 18,
-                'name'=>'id-18',
+                'id'=> '18',
+                'name'=>'instance-18',
+                'organization_id' => '2',
+                'account_id' => '6',
                 'kernel' => 'kernel-18',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1380,7 +1396,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 6,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1399,8 +1414,10 @@ Instance::create(
 
         Instance::create(
             array(
-                'id'=> 19,
-                'name'=>'id-19',
+                'id'=> '19',
+                'name'=>'instance-19',
+                'organization_id' => '2',
+                'account_id' => '7',
                 'kernel' => 'kernel-19',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1447,7 +1464,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 7,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1465,8 +1481,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 20,
-                'name'=>'id-20',
+                'id'=> '20',
+                'name'=>'instance-20',
+                'organization_id' => '2',
+                'account_id' => '7',
                 'kernel' => 'kernel-20',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1513,7 +1531,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 7,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1531,8 +1548,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 21,
-                'name'=>'id-21',
+                'id'=> '21',
+                'name'=>'instance-21',
+                'organization_id' => '2',
+                'account_id' => '7',
                 'kernel' => 'kernel-21',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1579,7 +1598,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 7,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1597,8 +1615,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 22,
-                'name'=>'id-22',
+                'id'=> '22',
+                'name'=>'instance-22',
+                'organization_id' => '2',
+                'account_id' => '8',
                 'kernel' => 'kernel-22',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1645,7 +1665,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 8,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1663,8 +1682,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 23,
-                'name'=>'id-23',
+                'id'=> '23',
+                'name'=>'instance-23',
+                'organization_id' => '2',
+                'account_id' => '8',
                 'kernel' => 'kernel-23',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1711,7 +1732,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 8,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1729,8 +1749,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 24,
-                'name'=>'id-24',
+                'id'=> '24',
+                'name'=>'instance-24',
+                'organization_id' => '2',
+                'account_id' => '8',
                 'kernel' => 'kernel-24',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1777,7 +1799,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 8,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1795,8 +1816,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 25,
-                'name'=>'id-25',
+                'id'=> '25',
+                'name'=>'instance-25',
+                'organization_id' => '2',
+                'account_id' => '9',
                 'kernel' => 'kernel-25',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1843,7 +1866,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 9,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1859,8 +1881,10 @@ Instance::create(
 
 Instance::create(
             array(
-                'id'=> 26,
-                'name'=>'id-26',
+                'id'=> '26',
+                'name'=>'instance-26',
+                'organization_id' => '2',
+                'account_id' => '9',
                 'kernel' => 'kernel-26',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1907,7 +1931,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 9,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',
@@ -1924,8 +1947,10 @@ Instance::create(
 
         Instance::create(
             array(
-                'id' => 27,
-                'name' => 'id-27',
+                'id' => '27',
+                'name' => 'instance-27',
+                'organization_id' => '2',
+                'account_id' => '9',
                 'kernel' => 'kernel-27',
                 'instance_profile' => 'normal',
                 'root_device_type' => 'root_device_type_holder',
@@ -1972,7 +1997,6 @@ Instance::create(
                 'private_ip_address' => 'private_ip_address_holder',
                 'vpc_id' => 'vpc_id_holder',
                 'product_codes' => 'product_codes_holder',
-                'reliam_aws_account' => 9,
                 'reliam_created' => new DateTime,
                 'reliam_modified' => new DateTime,
                 'reliam_status' => 'reliam_status_holder',

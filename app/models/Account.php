@@ -9,6 +9,7 @@ class Account extends Eloquent {
 
 	protected $fillable = array('id',
 								'name',
+								'organization_id',
 								'access_key',
 								'secret_key',
 								'organization',

@@ -31,7 +31,7 @@
 		<h4>Updates</h4>
 		<h5>Updates (4.20.15)</h5>
 			<li>added admin area for sys admins</li>
-			<li>-added user authorization, so if a user tries to enter into /admin area, 
+			<li>added user authorization, so if a user tries to enter into /admin area, 
 		they are redirected to /login</li>
 
 		<h6>created user test accounts:</h6>
@@ -93,7 +93,6 @@ and view all instances for all accounts of the selected organization. </p>
 <p>Under the hood a python script will be called 
 and take care of syncing data</p>
 
-<strong>Summary:</strong>
 <ul id="user-content-installing">
 	<h2>Installing Laravel VM with Homestead &amp; Vagrant</h2>
 	<h6><a href="http://laravel.com/docs/4.2/homestead">Installing Laravel on Homestead Tutorial</a></h6>

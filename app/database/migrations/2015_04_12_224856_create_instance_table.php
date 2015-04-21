@@ -18,8 +18,10 @@ class CreateInstanceTable extends Migration {
 		Schema::create('instances',function($table) {
 
 			$table->engine = 'InnoDB';
-			$table->integer('id');
+			$table->string('id',1000);
 			$table->string('name',100);
+			$table->string('account_id',100);
+			$table->string('organization_id',100);			
 			$table->string('kernel',100);
 			$table->string('instance_profile',500);
 			$table->string('root_device_type',100);
@@ -66,7 +68,6 @@ class CreateInstanceTable extends Migration {
 			$table->string('private_ip_address',100);
 			$table->string('vpc_id',100);
 			$table->string('product_codes',100);
-			$table->integer('reliam_aws_account');
 			$table->timestamp('reliam_modified');
 			$table->timestamp('reliam_created');
 			$table->string('reliam_status',25);

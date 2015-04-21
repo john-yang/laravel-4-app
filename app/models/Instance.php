@@ -9,6 +9,8 @@ class Instance extends Eloquent {
 
 	protected $fillable = array('id',
 								'name',
+								'organization_id',
+								'account_id',
 								'kernel',
 								'instance_profile',
 								'root_device_type',
