@@ -2,11 +2,12 @@
 
 @section('content')
 
-	<div class="table">
+	<div class="form-container" style="width:500px;margin:100px auto;border:1px dashed #aaa;padding:10px;">
 
-<div id="add-organization" class="form">
+<div id="login" class="form">
 {{ Form::open(['route' => 'session.store']) }}
 
+<h2>Please Login</h2>
 <div>
 {{ Form::label('username', 'Username:') }}
 {{ Form::text('username') }}

@@ -13,8 +13,6 @@ Route::resource('organizations', 'OrganizationController');
 
 Route::resource('accounts','AccountController');
 
-
-
 Route::group(array('prefix' => 'admin','before' => 'auth'), function()
 {
 	Route::get('', function()

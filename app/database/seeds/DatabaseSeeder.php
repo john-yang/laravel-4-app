@@ -1416,7 +1416,7 @@ Instance::create(
             array(
                 'id'=> '19',
                 'name'=>'instance-19',
-                'organization_id' => '2',
+                'organization_id' => '3',
                 'account_id' => '7',
                 'kernel' => 'kernel-19',
                 'instance_profile' => 'normal',
@@ -1483,7 +1483,7 @@ Instance::create(
             array(
                 'id'=> '20',
                 'name'=>'instance-20',
-                'organization_id' => '2',
+                'organization_id' => '3',
                 'account_id' => '7',
                 'kernel' => 'kernel-20',
                 'instance_profile' => 'normal',
@@ -1550,7 +1550,7 @@ Instance::create(
             array(
                 'id'=> '21',
                 'name'=>'instance-21',
-                'organization_id' => '2',
+                'organization_id' => '3',
                 'account_id' => '7',
                 'kernel' => 'kernel-21',
                 'instance_profile' => 'normal',
@@ -1684,7 +1684,7 @@ Instance::create(
             array(
                 'id'=> '23',
                 'name'=>'instance-23',
-                'organization_id' => '2',
+                'organization_id' => '3',
                 'account_id' => '8',
                 'kernel' => 'kernel-23',
                 'instance_profile' => 'normal',
@@ -1751,7 +1751,7 @@ Instance::create(
             array(
                 'id'=> '24',
                 'name'=>'instance-24',
-                'organization_id' => '2',
+                'organization_id' => '3',
                 'account_id' => '8',
                 'kernel' => 'kernel-24',
                 'instance_profile' => 'normal',
@@ -1818,7 +1818,7 @@ Instance::create(
             array(
                 'id'=> '25',
                 'name'=>'instance-25',
-                'organization_id' => '2',
+                'organization_id' => '3',
                 'account_id' => '9',
                 'kernel' => 'kernel-25',
                 'instance_profile' => 'normal',
@@ -1883,7 +1883,7 @@ Instance::create(
             array(
                 'id'=> '26',
                 'name'=>'instance-26',
-                'organization_id' => '2',
+                'organization_id' => '3',
                 'account_id' => '9',
                 'kernel' => 'kernel-26',
                 'instance_profile' => 'normal',
@@ -1949,7 +1949,7 @@ Instance::create(
             array(
                 'id' => '27',
                 'name' => 'instance-27',
-                'organization_id' => '2',
+                'organization_id' => '3',
                 'account_id' => '9',
                 'kernel' => 'kernel-27',
                 'instance_profile' => 'normal',

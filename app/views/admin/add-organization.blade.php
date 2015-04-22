@@ -2,9 +2,8 @@
 
 @section('content')
 
-	<div class="table">
-
-<div id="add-organization" class="form">
+<div id="add-organization" class="form" style="width:400px;margin:100px auto;border:1px dashed #aaa;padding:10px;">
+<h2>Add New Organization</h2>
 {{ Form::open(['route' => 'organizations.store']) }}
 
 <div>
@@ -30,7 +29,5 @@
 
 
 </div><!-- form -->
-
-  	</div><!-- table -->
 
 @stop

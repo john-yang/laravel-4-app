@@ -14,6 +14,7 @@
   			<div class="id">Id</div>
   			<div class="name">Name</div>
   			<div class="organization_id">Organization ID</div>
+  			<div class="account_login">Auto Login</div>
 		</div>
 
 		<?php
@@ -24,6 +25,7 @@
 	  			echo '<div class="id">'.$acct['id'].'</div>';
 	  			echo '<div class="name">'.$acct['name'].'</div>';
 	  			echo '<div class="organization_id">'.$acct['organization_id'].'</div>';
+	  			echo '<div class="account_login"><a href="#">Click To Login</a></div>';
 	  			echo '</div>';
 	  		}
 	  	?>
