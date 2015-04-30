@@ -1,0 +1,38 @@
+<?php $__env->startSection('sidebar'); ?>
+    
+<?php $__env->startSection('content'); ?>
+	<div class="table">
+
+<div id="edit-organization" class="form">
+
+<?php echo Form::model($organization, ['method' => 'PATCH', 'route' => ['organizations.update', $organization->id]]); ?>
+
+
+<div>
+<?php echo Form::label('id', 'ID:'); ?>
+
+<?php echo Form::text('id'); ?>
+
+</div>
+
+<div>
+<?php echo Form::label('name','Name:'); ?>
+
+<?php echo Form::text('name'); ?>
+
+</div>
+
+<div>
+<?php echo Form::submit('Update Order'); ?>
+
+</div>
+
+<?php echo Form::close(); ?>
+
+
+</div><!-- form -->
+  	</div><!-- table -->
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

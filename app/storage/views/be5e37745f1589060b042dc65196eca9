@@ -1,0 +1,14 @@
+<!-- app/views/org-edit.blade.php -->
+
+    <?php echo Form::model($organization, array('route' => 'organization.edit', $organization->id)); ?>    
+
+        <!-- name -->
+        <?php echo Form::label('name', 'Name'); ?>
+
+        <?php echo Form::text('name'); ?>    
+
+        <?php echo Form::submit('Update Org!'); ?>
+
+
+    <?php echo Form::close(); ?>
+

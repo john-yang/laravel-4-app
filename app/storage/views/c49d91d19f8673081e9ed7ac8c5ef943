@@ -1,0 +1,38 @@
+<?php $__env->startSection('content'); ?>
+
+	<div class="table">
+
+<div id="add-organization" class="form">
+<?php echo Form::open(['route' => 'organizations.store']); ?>
+
+
+<div>
+<?php echo Form::label('username', 'Username:'); ?>
+
+<?php echo Form::text('username'); ?>
+
+</div>
+
+<div>
+<?php echo Form::label('password','Password:'); ?>
+
+<?php echo Form::text('password'); ?>
+
+</div>
+
+
+
+<div>
+<?php echo Form::submit('Sign In'); ?>
+
+</div>
+
+<?php echo Form::close(); ?>
+
+
+
+</div><!-- form -->
+
+  	</div><!-- table -->
+  	<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
