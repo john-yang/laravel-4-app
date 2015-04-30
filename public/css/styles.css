@@ -11,13 +11,17 @@ nav ul li#logo a img{ width:100px;}
 
 div.container { margin:20px;}
 
-.table { width:1800px;}
+.table { width:2800px;}
 .row {clear:both;overflow:hidden; }
 .clear{ clear:both;}
 
 .title div { }
 
 /*  Instances */
+div.organization_id { width:200px;}
+div.account_id { width:200px;}
+div.view-instances { width:200px;}
+div.view-accounts {width:200px;}
 div.edit { width:150px;}
 div.id { width:100px;}
 div.name { width:120px;}
@@ -50,19 +54,19 @@ div.groups{}
 div.spot_instance_request_id{}
 div.monitoring{}
 div.requester_id{}
-div.ip_address{}
+div.ip_address{width:200px;}
 div.monitoring_state{}
 div._placement{}
 div.ami_launch_index{}
 div.dns_name{}
-div.region{}
+div.region{width:200px;}
 div.launch_time{}
 div.persistent{}
 div.instance_type{}
 div.connection{}
 div.root_device_name{}
 div.hypervisor{}
-div.private_ip_address{}
+div.private_ip_address{width:200px;}
 div.vpc_id{}
 div.product_codes{}
 div.reliam_aws_account{}
@@ -77,6 +81,10 @@ div.sys_machine{}
 div.updated_at{}
 div.created_at {}
 
+div.organization_id,
+div.account_id,
+div.view-instances,
+div.view-accounts,
 div.edit,
 div.id,
 div.name,

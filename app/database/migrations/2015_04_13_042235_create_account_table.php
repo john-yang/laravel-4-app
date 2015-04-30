@@ -18,10 +18,10 @@ class CreateAccountTable extends Migration {
 			
 			$table->engine = 'InnoDB';
 			$table->string('id',50);
+			$table->string('organization_id',100);
 			$table->string('name',50);
 			$table->string('access_key',50);
 			$table->string('secret_key',50);
-			$table->integer('organization');
 			$table->timestamp('created_at');
 			$table->timestamp('updated_at');
 

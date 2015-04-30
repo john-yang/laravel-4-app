@@ -12,10 +12,15 @@
 <nav>
 	<ul>
 		<li id="logo"><a href="http://homestead.app"><img src="logo.png"></a></li>
-		<li id="organizations"><a href="http://homestead.app/organizations">All Organizations</a></li>
-		<li id="instances"><a href="http://homestead.app/organizations/create">Add Organization</a></li>
-		<li id="accounts"><a href="http://homestead.app/instances">All Instances</a></li>
-		<li id="documentation"><a href="#">Documentation</a></li>
+		<ul>
+		</li>
+		
+		<li><a href="/organizations">View All Organizations</a></li>
+		<li><a href="/accounts">View All Accounts</a></li>		
+		<li><a href="/instances">View All Instances</a></li>
+		<li><a href="/login">Login</a></li>
+		<li id="instances"><a href="http://homestead.app/admin/add-organization">Add Organization</a></li>
+		<li><a href="/logout">Logout</a></li>
 		<div class="clear"></div>
 	</ul>
 </nav>

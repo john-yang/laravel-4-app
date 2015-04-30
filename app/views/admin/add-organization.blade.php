@@ -2,8 +2,8 @@
 
 @section('content')
 
-
 <div id="add-organization" class="form" style="width:400px;margin:100px auto;border:1px dashed #aaa;padding:10px;">
+<h2>Add New Organization</h2>
 {{ Form::open(['route' => 'organizations.store']) }}
 
 <div>
@@ -22,7 +22,7 @@
 </div>
 
 <div>
-{{ Form::submit('Update Order') }}
+{{ Form::submit('Add New Organization') }}
 </div>
 
 {{ Form::close() }}
